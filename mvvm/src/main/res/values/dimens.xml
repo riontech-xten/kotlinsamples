@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_card_radius">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="user_list_item_dp_size">72dp</dimen>
+    <dimen name="user_grid_vertical_padding">32dp</dimen>
+    <dimen name="user_popup_info_top_margin">50dp</dimen>
+    <dimen name="top_drawable_padding">4dp</dimen>
+    <dimen name="popup_max_width">320dp</dimen>
+</resources>

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">KotlinRepository</string>
+    <string name="app_name">MVVM</string>
+    <string name="charles_morris">Charles Morris</string>
+    <string name="charles_morris_email">charles.morris@reqres.in</string>
+    <string name="loading">Loading...</string>
+    <string name="get_in_touch">Get In Touch</string>
+    <string name="no_internet">You are offline</string>
+    <string name="error">Error</string>
+    <string name="oops_something_went_wrong">Oops! Something went wrong</string>
+    <string name="try_again">Try Again</string>
 </resources>
