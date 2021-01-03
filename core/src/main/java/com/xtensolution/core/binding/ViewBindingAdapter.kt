@@ -1,4 +1,4 @@
-package com.xtensolution.sample.mvvm.ui.binding
+package com.xtensolution.core.binding
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

@@ -4,9 +4,9 @@ import com.xtensolution.sample.mvvm.ui.viewholder.UserHolder
 import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.xtensolution.sample.mvvm.core.BaseViewAdapter
-import com.xtensolution.sample.mvvm.data.model.User
-import com.xtensolution.sample.mvvm.databinding.RowItemUserBinding
+import com.xtensolution.core.BaseViewAdapter
+import com.xtensolution.core.data.model.User
+import com.xtensolution.core.databinding.RowItemUserBinding
 
 
 /**

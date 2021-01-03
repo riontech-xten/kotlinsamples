@@ -1,8 +1,8 @@
 package com.xtensolution.sample.mvvm.ui.viewholder
 
-import com.xtensolution.sample.mvvm.core.BaseViewHolder
-import com.xtensolution.sample.mvvm.data.model.User
-import com.xtensolution.sample.mvvm.databinding.RowItemUserBinding
+import com.xtensolution.core.BaseViewHolder
+import com.xtensolution.core.data.model.User
+import com.xtensolution.core.databinding.RowItemUserBinding
 
 
 /**

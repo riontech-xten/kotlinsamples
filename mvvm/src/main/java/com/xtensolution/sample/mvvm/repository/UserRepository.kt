@@ -1,6 +1,6 @@
 package com.xtensolution.sample.mvvm.repository
 
-import com.xtensolution.sample.mvvm.data.JSONDataSource
+import com.xtensolution.core.data.JSONDataSource
 
 
 /**

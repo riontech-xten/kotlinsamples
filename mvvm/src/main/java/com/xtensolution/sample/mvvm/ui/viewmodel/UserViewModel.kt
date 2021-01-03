@@ -4,10 +4,10 @@ import android.app.Application
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.xtensolution.sample.mvvm.core.DataResultStatus
-import com.xtensolution.sample.mvvm.core.ioThread
-import com.xtensolution.sample.mvvm.data.JSONDataSource
-import com.xtensolution.sample.mvvm.data.model.User
+import com.xtensolution.core.DataResultStatus
+import com.xtensolution.core.ioThread
+import com.xtensolution.core.data.JSONDataSource
+import com.xtensolution.core.data.model.User
 import com.xtensolution.sample.mvvm.repository.UserRepository
 
 class UserViewModel(application: Application) : ViewModel() {

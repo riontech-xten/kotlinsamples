@@ -1,4 +1,4 @@
-package com.xtensolution.sample.mvvm.data.model
+package com.xtensolution.core.data.model
 
 import com.google.gson.annotations.SerializedName
 

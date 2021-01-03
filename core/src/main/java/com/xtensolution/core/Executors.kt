@@ -1,4 +1,4 @@
-package com.xtensolution.sample.mvvm.core
+package com.xtensolution.core
 
 
 /**

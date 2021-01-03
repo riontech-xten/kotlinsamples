@@ -12,9 +12,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.xtensolution.sample.mvvm.R
-import com.xtensolution.sample.mvvm.core.BaseViewHolder
-import com.xtensolution.sample.mvvm.core.DataResultStatus
-import com.xtensolution.sample.mvvm.data.model.User
+import com.xtensolution.core.BaseViewHolder
+import com.xtensolution.core.DataResultStatus
+import com.xtensolution.core.data.model.User
 import com.xtensolution.sample.mvvm.ui.adapter.UserListAdapter
 import com.xtensolution.sample.mvvm.ui.viewmodel.UserViewModel
 import com.xtensolution.sample.mvvm.ui.viewmodel.UserViewModel.UserViewModelFactory

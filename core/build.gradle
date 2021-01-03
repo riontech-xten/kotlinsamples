@@ -1,16 +1,23 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+//    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
 
 android {
     compileSdkVersion rootProject.androidTargetSdkVersion
     buildToolsVersion rootProject.androidBuildToolsVersion
 
     defaultConfig {
-        applicationId "com.xtensolution.sample.mvvm"
         minSdkVersion rootProject.androidMinSdkVersion
         targetSdkVersion rootProject.androidTargetSdkVersion
         versionCode rootProject.androidVersionCode
         versionName rootProject.androidVersionName
+        vectorDrawables.useSupportLibrary = true
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -19,16 +26,48 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        dataBinding = true
+        // for view binding:
+         viewBinding = true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':core')
+
+    api deps.support.appcompat
+    api deps.support.material
+    api deps.support.constraintlayout
+    api deps.support.recyclerview
+    api deps.support.swiperefreshlayout
+    api deps.support.cardview
+
+    api deps.gson
+
+    // Lifecycle
+    api deps.lifecycle.livedata_ktx
+    api deps.lifecycle.viewmodel_ktx
+
+    //Glide
+    api deps.glide.runtime
+    kapt deps.glide.compiler
+
+    api deps.kotlin.stdlib
+    api deps.lifecycle.extensions
+    kapt deps.databinding.compiler
 
     testImplementation deps.junit.runtime
     // Mockito

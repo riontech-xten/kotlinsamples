@@ -1,9 +1,9 @@
-package com.xtensolution.sample.mvvm.data
+package com.xtensolution.core.data
 
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.xtensolution.sample.mvvm.data.model.User
+import com.xtensolution.core.data.model.User
 import java.io.IOException
 
 
