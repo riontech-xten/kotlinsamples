@@ -1,10 +1,13 @@
 package com.xtensolution.core.data
 
 import android.content.Context
+import android.content.res.AssetManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.xtensolution.core.data.model.User
 import java.io.IOException
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 /**
@@ -25,5 +28,9 @@ class JSONDataSource(private val context: Context) {
             return null
         }
         return locations
+    }
+
+    fun fileExists(fileName: String): Boolean {
+        return listOf(context.assets.list("")).contains(fileName)
     }
 }

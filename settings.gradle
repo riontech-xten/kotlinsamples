@@ -1,3 +1,4 @@
+include ':roomdb'
 include ':core'
 include ':mvvm'
-rootProject.name = "KotlinRepository"
+rootProject.name = "kotlinsamples"
