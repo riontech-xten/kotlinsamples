@@ -1,20 +1,18 @@
 package com.xtensolution.sample.mvvm
 
-import android.content.Context
+import androidx.test.platform.app.InstrumentationRegistry
 import com.xtensolution.core.data.JSONDataSource
 import com.xtensolution.core.data.model.User
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mockito.mock
 
-class JSONDataSourceTest {
-
+class AssetDataSourceTest {
     private var dataSource: JSONDataSource? = null
 
     @Before
     fun setup() {
-        val context = mock(Context::class.java)
+        val context =  InstrumentationRegistry.getInstrumentation().targetContext
         dataSource = JSONDataSource(context)
     }
 
