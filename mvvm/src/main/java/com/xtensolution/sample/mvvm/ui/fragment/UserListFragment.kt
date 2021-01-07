@@ -70,8 +70,8 @@ class UserListFragment : Fragment(), BaseViewHolder.ViewHolderClickListener {
         handleError(View.GONE)
         viewModel.userData.observe(
             viewLifecycleOwner,
-            object : Observer<DataResultStatus<MutableList<User>>> {
-                override fun onChanged(t: DataResultStatus<MutableList<User>>?) {
+            object : Observer<DataResultStatus<List<User>>> {
+                override fun onChanged(t: DataResultStatus<List<User>>?) {
                     loading(View.GONE)
                     handleError(View.GONE)
                     when (t) {

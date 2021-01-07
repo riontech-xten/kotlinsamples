@@ -12,7 +12,7 @@ import com.xtensolution.sample.mvvm.repository.UserRepository
 
 class UserViewModel(application: Application) : ViewModel() {
     private val repository: UserRepository
-    var userData: MutableLiveData<DataResultStatus<MutableList<User>>> = MutableLiveData()
+    var userData: MutableLiveData<DataResultStatus<List<User>>> = MutableLiveData()
 
     init {
         val jsonDataSource = JSONDataSource(application.applicationContext)
@@ -35,7 +35,7 @@ class UserViewModel(application: Application) : ViewModel() {
         }
     }
 
-    class UserViewModelFactory(val application: Application) : ViewModelProvider.Factory {
+    class UserViewModelFactory(private val application: Application) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(UserViewModel::class.java)) {
                 return UserViewModel(application) as T

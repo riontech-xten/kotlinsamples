@@ -16,9 +16,9 @@ import kotlin.collections.ArrayList
  */
 class JSONDataSource(private val context: Context) {
 
-    fun getUserFromAsset(fileName: String): ArrayList<User>? {
+    fun getUserFromAsset(fileName: String): List<User>? {
         var jsonString: String
-        var locations = ArrayList<User>()
+        var locations = null
         try {
             jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
             val listLocationType = object : TypeToken<List<User>>() {}.type

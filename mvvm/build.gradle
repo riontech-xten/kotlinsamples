@@ -55,5 +55,6 @@ dependencies {
     testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-RC3'
     testImplementation deps.mockito.inline
     testImplementation deps.mockito.core
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
     androidTestImplementation deps.espresso.core
 }
